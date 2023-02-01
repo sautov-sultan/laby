@@ -6,4 +6,5 @@ def gen_psw(length: int) -> str:
     return ''.join([choice(al + d) for _ in range(length)])
 
 
-print(gen_psw(10))
+def gen_psws(length: int, number: int) -> list:
+    return [gen_psw(length) for _ in range(number)]
